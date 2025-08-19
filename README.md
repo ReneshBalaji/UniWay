@@ -1,73 +1,48 @@
-<div align="center">
-  <h1>UniWay</h1>
-  <p>Your Path to Academic Success</p>
-  
-  <p>
-    <img src="https://img.shields.io/github/license/ReneshBalaji/UniWay?style=for-the-badge" alt="license">
-    <img src="https://img.shields.io/github/stars/ReneshBalaji/UniWay?style=for-the-badge" alt="stars">
-    <img src="https://img.shields.io/github/forks/ReneshBalaji/UniWay?style=for-the-badge" alt="forks">
-    <img src="https://img.shields.io/github/last-commit/ReneshBalaji/UniWay?style=for-the-badge" alt="last-commit">
-  </p>
-</div>
+UniWay – Offline Campus Navigation for MUJ
 
----
+UniWay is an offline-first campus navigation app built for Manipal University Jaipur (MUJ).
+It helps students, staff, and visitors find their way around campus — without needing the internet.
 
-## 🚀 About UniWay
+Powered by Flutter and OpenStreetMap, UniWay is lightweight, fast, and designed to scale for other universities.
 
-UniWay is a modern, all-in-one mobile application designed to simplify the overwhelming process of college discovery and application. Built with **React Native** and **Django**, it provides students with a streamlined platform to explore universities, receive AI-powered guidance, and connect with a community of peers.
+✨ Features
 
-The goal of UniWay is to empower students by making information accessible and the journey to higher education less stressful.
+Offline Navigation – Maps and building data work without internet
+Interactive Map – Smooth zoom & pan using OpenStreetMap tiles
+Splash Screen – Clean animated app intro
+Home Screen – Campus overview with quick access to locations
+Amenities – Detailed building info (library, blocks, offices, etc.)
+Events – Stay updated with campus events in one place
+Search – Find buildings, amenities, and events instantly
 
----
+📦 Tech Stack
 
-## ✨ Key Features
+Flutter – App framework
+Dart – Programming language
+flutter_map – OpenStreetMap integration
+go_router – Navigation & routing
+provider – State management
+shared_preferences – Offline data storage
+cached_network_image – Image caching
 
-* **🎓 College Discovery:** A comprehensive and searchable database of colleges with detailed profiles.
-* **🤖 AI-Powered Counselor:** Get personalized college recommendations and career advice from our intelligent AI assistant.
-* **💬 Community Forum:** Connect with other students, ask questions, and share experiences.
-* **✅ Application Tracker:** Keep track of application deadlines, requirements, and statuses in one place.
-* **👤 User Authentication:** Secure registration and profile management for a personalized experience.
+🚀 Getting Started
 
----
+1. Clone the repo
 
-## 📸 Screenshots
+git clone https://github.com/ReneshBalaji/UniWay.git
+cd UniWay
 
-<div align="center">
-  <img src="https://via.placeholder.com/200x400.png?text=Onboarding+Screen" alt="Onboarding Screen" hspace="10">
-  <img src="https://via.placeholder.com/200x400.png?text=Home+Screen" alt="Home Screen" hspace="10">
-  <img src="https://via.placeholder.com/200x400.png?text=AI+Counselor+Chat" alt="AI Counselor Chat" hspace="10">
-</div>
+2. Install dependencies
 
----
+flutter pub get
 
-## 💻 Tech Stack
+3. Run the app
 
-This project uses a modern monorepo structure with a separate frontend and backend.
+flutter run
 
-<table>
-  <tr>
-    <td valign="top">
-      <h3>Frontend (Mobile)</h3>
-      <ul>
-        <li>React Native</li>
-        <li>Expo</li>
-        <li>React Navigation</li>
-        <li>Axios</li>
-      </ul>
-    </td>
-    <td valign="top">
-      <h3>Backend (API)</h3>
-      <ul>
-        <li>Python</li>
-        <li>Django</li>
-        <li>Django REST Framework</li>
-        <li>PostgreSQL</li>
-        <li>Djoser (Authentication)</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+📌 Roadmap
 
-<p align="center">
-  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native"/>
-  <img src="
+ Add offline turn-by-turn routing
+ Support for multiple campuses
+ Event reminders & notifications
+ Dark mode support

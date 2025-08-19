@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'dart:async'; // Import async library for the timer
 import 'home_screen.dart'; // Import your new home screen file
 
@@ -16,10 +17,36 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
+=======
+import 'package:go_router/go_router.dart';
+import 'core/theme/app_theme.dart';
+import 'features/home/splash_screen.dart';
+import 'features/home/home_screen.dart';
+import 'features/map/map_screen.dart';
+import 'features/amenities/amenities_screen.dart';
+import 'features/events/events_screen.dart';
+import 'shared/constants/app_constants.dart';
+
+void main() {
+  runApp(const UniWayApp());
+}
+
+class UniWayApp extends StatelessWidget {
+  const UniWayApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp.router(
+      title: AppConstants.appName,
+      theme: AppTheme.lightTheme,
+      routerConfig: _router,
+      debugShowCheckedModeBanner: false,
+>>>>>>> e3958f20ffb375dad5d9cb47338905ae21516b92
     );
   }
 }
 
+<<<<<<< HEAD
 // SplashScreen is the stateful widget for your animated screen.
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -115,3 +142,30 @@ class _SplashScreenState extends State<SplashScreen>
     );
   }
 }
+=======
+final GoRouter _router = GoRouter(
+  initialLocation: '/',
+  routes: [
+    GoRoute(
+      path: '/',
+      builder: (context, state) => const SplashScreen(),
+    ),
+    GoRoute(
+      path: '/home',
+      builder: (context, state) => const HomeScreen(),
+    ),
+    GoRoute(
+      path: '/map',
+      builder: (context, state) => const MapScreen(),
+    ),
+    GoRoute(
+      path: '/amenities',
+      builder: (context, state) => const AmenitiesScreen(),
+    ),
+    GoRoute(
+      path: '/events',
+      builder: (context, state) => const EventsScreen(),
+    ),
+  ],
+);
+>>>>>>> e3958f20ffb375dad5d9cb47338905ae21516b92

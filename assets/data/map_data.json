@@ -1,0 +1,189 @@
+{
+  "campus": {
+    "name": "Manipal University Jaipur",
+    "center": {
+      "lat": 26.8421,
+      "lng": 75.5639
+    },
+    "bounds": {
+      "north": 26.8460,
+      "south": 26.8410,
+      "east": 75.5680,
+      "west": 75.5630
+    }
+  },
+  "buildings": [
+    {
+      "id": "1",
+      "name": "Dome Building",
+      "description": "It contains the central library, key academic faculties, the placement office, and core administrative departments.",
+      "type": "BUILDING",
+      "imageUrl": "",
+      "latitude": 26.84210947005886,
+      "longitude": 75.5639037337811,
+      "etaMinutes": 9,
+      "facilities": ["Library", "Placement Office", "Admin"],
+      "tags": ["Academic", "Administrative"]
+    },
+    {
+      "id": "2",
+      "name": "Academic Block-1",
+      "description": "Building with Chemistry and Math/Physics labs for teaching and research.",
+      "type": "FACULTY BLOCK",
+      "imageUrl": "",
+      "latitude": 26.842432342733858,
+      "longitude": 75.56423439944129,
+      "etaMinutes": 6,
+      "facilities": ["Chemistry Lab", "Physics Lab", "Math Lab"],
+      "tags": ["Academic", "Laboratory"]
+    },
+    {
+      "id": "3",
+      "name": "Academic Block-2",
+      "description": "Block with auditoriums, classrooms, labs, faculty rooms, and spaces for events and discussions.",
+      "type": "FACULTY BLOCK",
+      "imageUrl": "",
+      "latitude": 26.842508731240954,
+      "longitude": 75.56441940258387,
+      "etaMinutes": 7,
+      "facilities": ["Auditorium", "Classrooms", "Faculty Rooms"],
+      "tags": ["Academic", "Events"]
+    },
+    {
+      "id": "4",
+      "name": "Academic Block-3",
+      "description": "Modern building with classrooms, a library, a 385-seat auditorium, Rajasthan-inspired design, and sustainable features.",
+      "type": "FACULTY BLOCK",
+      "imageUrl": "",
+      "latitude": 26.842990982262336,
+      "longitude": 75.565269883485,
+      "etaMinutes": 7,
+      "facilities": ["Library", "Auditorium", "Classrooms"],
+      "tags": ["Academic", "Modern"]
+    },
+    {
+      "id": "5",
+      "name": "Academic Block-4",
+      "description": "Latest academic block with advanced laboratories and research facilities.",
+      "type": "FACULTY BLOCK",
+      "imageUrl": "",
+      "latitude": 26.84310826990493,
+      "longitude": 75.5658299896817,
+      "etaMinutes": 8,
+      "facilities": ["Research Labs", "Classrooms", "Conference Rooms"],
+      "tags": ["Academic", "Research"]
+    },
+    {
+      "id": "6",
+      "name": "AWS",
+      "description": "Amazon Web Services facility and cloud computing center.",
+      "type": "BUILDING",
+      "imageUrl": "",
+      "latitude": 26.84166094208605,
+      "longitude": 75.5659101997521,
+      "etaMinutes": 5,
+      "facilities": ["Cloud Computing", "Training Center"],
+      "tags": ["Technology", "Training"]
+    },
+    {
+      "id": "7",
+      "name": "Mess",
+      "description": "Student dining facility with multiple food options.",
+      "type": "BUILDING",
+      "imageUrl": "",
+      "latitude": 26.841566594616495,
+      "longitude": 75.56565257839608,
+      "etaMinutes": 4,
+      "facilities": ["Dining Hall", "Food Court"],
+      "tags": ["Food", "Student Life"]
+    },
+    {
+      "id": "8",
+      "name": "Central Library",
+      "description": "The central library at MUJ is a large, modern facility offering books, journals, e-resources, and study spaces for students and faculty.",
+      "type": "BUILDING",
+      "imageUrl": "",
+      "latitude": 26.84374588812436,
+      "longitude": 75.56689282842939,
+      "etaMinutes": 5,
+      "facilities": ["Study Spaces", "E-Resources", "Books"],
+      "tags": ["Library", "Study"]
+    },
+    {
+      "id": "9",
+      "name": "Placement Office",
+      "description": "Career development and placement services for students.",
+      "type": "BUILDING",
+      "imageUrl": "",
+      "latitude": 26.843887382755796,
+      "longitude": 75.56751416189044,
+      "etaMinutes": 6,
+      "facilities": ["Career Counseling", "Interview Rooms"],
+      "tags": ["Career", "Services"]
+    },
+    {
+      "id": "10",
+      "name": "Law Library",
+      "description": "Housing 9,000+ books, 50 journals, legal databases, and digital resources, with remote access.",
+      "type": "BUILDING",
+      "imageUrl": "",
+      "latitude": 26.9128,
+      "longitude": 75.7876,
+      "etaMinutes": 6,
+      "facilities": ["Legal Resources", "Study Rooms"],
+      "tags": ["Library", "Legal"]
+    }
+  ],
+  "routes": {
+    "Orientation": [
+      {"lat": 26.9124, "lng": 75.7873},
+      {"lat": 26.9130, "lng": 75.7870},
+      {"lat": 26.9135, "lng": 75.7875}
+    ],
+    "Library Route": [
+      {"lat": 26.9122, "lng": 75.7871},
+      {"lat": 26.9128, "lng": 75.7876}
+    ],
+    "Academic Route": [
+      {"lat": 26.9130, "lng": 75.7870},
+      {"lat": 26.9135, "lng": 75.7875},
+      {"lat": 26.9140, "lng": 75.7880},
+      {"lat": 26.9145, "lng": 75.7885}
+    ],
+    "Campus Tour": [
+      {"lat": 26.9124, "lng": 75.7873},
+      {"lat": 26.9122, "lng": 75.7871},
+      {"lat": 26.9126, "lng": 75.7874},
+      {"lat": 26.9130, "lng": 75.7870},
+      {"lat": 26.9135, "lng": 75.7875},
+      {"lat": 26.9140, "lng": 75.7880},
+      {"lat": 26.9145, "lng": 75.7885}
+    ]
+  },
+  "events": [
+    {
+      "id": "1",
+      "name": "ONEIROS",
+      "tagline": "CONVERGING EXTREMES",
+      "description": "Annual technical and cultural festival of MUJ.",
+      "imageUrl": "",
+      "date": "2016-02-22",
+      "location": "Front of cricket ground",
+      "latitude": 26.9110,
+      "longitude": 75.7860,
+      "tags": ["Academic", "Cultural"]
+    },
+    {
+      "id": "2",
+      "name": "ACL",
+      "tagline": "APERTURE CRICKET LEAGUE",
+      "description": "Annual cricket tournament featuring teams from different departments.",
+      "imageUrl": "",
+      "date": "2025-08-18",
+      "location": "Cricket Ground",
+      "latitude": 26.9115,
+      "longitude": 75.7865,
+      "tags": ["Sports", "Tournament"]
+    }
+  ]
+} 
