@@ -5,8 +5,7 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-<<<<<<< HEAD
-import 'package.flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 // Make sure the import path points to your main.dart file.
@@ -41,18 +40,5 @@ void main() {
       // Verify that the background color of the Scaffold matches the design.
       expect(scaffold.backgroundColor, const Color(0xFFF7F5F0));
     });
-=======
-import 'package:flutter_test/flutter_test.dart';
-
-import 'package:uniway/main.dart';
-
-void main() {
-  testWidgets('UniWay app smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const UniWayApp());
-
-    // Verify that the app starts with the splash screen
-    expect(find.text('UniWay'), findsOneWidget);
->>>>>>> e3958f20ffb375dad5d9cb47338905ae21516b92
   });
 }

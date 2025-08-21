@@ -41,35 +41,30 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFFF7F5F0),
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                _buildAppBar(),
-                const SizedBox(height: 8),
-                _buildSearchBar(),
-                const SizedBox(height: 12),
-                // Reverted Stack to a Column for a connected look
-                Column(
-                  children: [
-                    _buildMapPreview(),
-                    _buildQuickLocationsPanel(),
-                  ],
-                ),
-                const SizedBox(height: 12),
-                _buildBannerCarousel(),
-                const SizedBox(height: 12),
-              ],
-            ),
+    return SafeArea(
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _buildAppBar(),
+              const SizedBox(height: 8),
+              _buildSearchBar(),
+              const SizedBox(height: 12),
+              Column(
+                children: [
+                  _buildMapPreview(),
+                  _buildQuickLocationsPanel(),
+                ],
+              ),
+              const SizedBox(height: 12),
+              _buildBannerCarousel(),
+              const SizedBox(height: 12),
+            ],
           ),
         ),
       ),
-      bottomNavigationBar: _buildBottomNavBar(),
     );
   }
 
@@ -120,7 +115,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildMapPreview() {
     return ClipRRect(
-      // Only rounding the top corners
       borderRadius: const BorderRadius.vertical(top: Radius.circular(15.0)),
       child: Image.asset('assets/images/map_preview.png'),
     );
@@ -131,7 +125,6 @@ class _HomeScreenState extends State<HomeScreen> {
       padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 16.0),
       decoration: BoxDecoration(
         color: Colors.white,
-        // Only rounding the bottom corners
         borderRadius: const BorderRadius.vertical(bottom: Radius.circular(15.0)),
         border: Border(
           left: BorderSide(color: const Color(0x1A000000), width: 1),
@@ -269,45 +262,6 @@ class _HomeScreenState extends State<HomeScreen> {
         color: _currentPage == index ? const Color(0xFFF0624A) : Colors.grey,
         borderRadius: BorderRadius.circular(5),
       ),
-    );
-  }
-
-  Widget _buildBottomNavBar() {
-    return Container(
-      height: 80,
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        border: Border(
-          top: BorderSide(color: Color(0xFFE6E6E6), width: 2.0),
-        ),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          _navBarItem('Home.png', 'Home', const Color(0xFFFC563A), true),
-          _navBarItem('locationgray.png', 'Map', const Color(0xFFADADAF), false),
-          _navBarItem('Amenities.gray.png', 'Amenities', const Color(0xFFADADAF), false),
-          _navBarItem('eventsgray.png', 'Events', const Color(0xFFADADAF), false),
-        ],
-      ),
-    );
-  }
-
-  Widget _navBarItem(String iconName, String label, Color color, bool isActive) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Image.asset('assets/images/$iconName', width: 24, color: isActive ? color : null),
-        const SizedBox(height: 4),
-        Text(
-          label,
-          style: TextStyle(
-            color: color,
-            fontFamily: 'Gilroy-Medium',
-            fontSize: 12,
-          ),
-        ),
-      ],
     );
   }
 }
